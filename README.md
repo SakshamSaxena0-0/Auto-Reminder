@@ -18,8 +18,9 @@ A simple Python script that monitors the price of a product on Amazon and sends 
 - Python 3.7+  
 - A Gmail account with an [App Password](https://support.google.com/accounts/answer/185833).  
 - The following Python packages:
-  ```bash
-  pip install requests beautifulsoup4
+  
+```bash
+pip install -r requirements.txt
 
 
 ## How to setup
