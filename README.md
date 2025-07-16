@@ -31,9 +31,9 @@ A simple Python script that monitors the price of a product on Amazon and sends 
 
  - Switch to the Actions tab and click New.
 
- - In Program/script, enter the path to your Python executable (e.g., C:\Python39\python.exe).
+ - In Program/script, enter the path to your Python executable.
 
- - In Add arguments, enter the full path to reminder.py (e.g., C:\path\to\reminder.py), then click OK.
+ - In Add arguments, enter the full path to reminder.py, then click OK.
 
  - In the Conditions tab, uncheck “Start the task only if the computer is on AC power”, then click OK.
 
