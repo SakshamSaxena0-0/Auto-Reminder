@@ -1,22 +1,40 @@
-# Auto-Reminder
-# 🔔 Price Drop Email Reminder
+# Price Drop Notifier
 
-A simple Python script that checks the price of a product (e.g., on Amazon) and sends you an email notification when it drops below your target price.
+A simple Python script that monitors the price of a product on Amazon and sends you an email notification when the price falls below a target threshold.
 
-## 📌 Features
-- Scrapes product title and price using `requests` + `BeautifulSoup`
-- Sends alert email via Gmail SMTP when price falls below target
-- Easy to customize and schedule
+- Built with `requests`, `BeautifulSoup`, and Python’s built-in `smtplib`.
+- Configurable for any Amazon product URL and any desired target price.
+- Sends notification via Gmail SMTP (using an app-specific password).
 
----
+## Features
 
-## 🧰 Requirements
+- Fetches current price and product title from Amazon.
+- Compares against your target price.
+- Sends an email alert when the price drops in your favor.
+- Runs as a standalone script—great for scheduling via Task Scheduler or cron.
 
-- Python 3.7+
-- Gmail account with an [App Password](https://support.google.com/accounts/answer/185833)
-- The following Python packages (install using pip):
+## Prerequisites
 
-```bash
-pip install -r requirements.txt
+- Python 3.7+  
+- A Gmail account with an [App Password](https://support.google.com/accounts/answer/185833).  
+- The following Python packages:
+  ```bash
+  pip install requests beautifulsoup4
 
- ```bash
+
+## How to setup
+ - Enter the name of the task (application) according to your wish.
+
+ - Open Task Scheduler and go to the Triggers tab.
+
+ - Click New, set it to Daily, choose your desired Start time, then click OK.
+
+ - Switch to the Actions tab and click New.
+
+ - In Program/script, enter the path to your Python executable (e.g., C:\Python39\python.exe).
+
+ - In Add arguments, enter the full path to reminder.py (e.g., C:\path\to\reminder.py), then click OK.
+
+ - In the Conditions tab, uncheck “Start the task only if the computer is on AC power”, then click OK.
+
+ - Finally, click OK in the main Task Scheduler window to save your scheduled task.
