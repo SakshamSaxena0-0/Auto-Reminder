@@ -18,3 +18,5 @@ A simple Python script that checks the price of a product (e.g., on Amazon) and 
 
 ```bash
 pip install -r requirements.txt
+
+ ## How to setup
